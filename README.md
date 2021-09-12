@@ -8,7 +8,7 @@ However when you press the buttons on the left, which try to add many tabs inseq
 
 `
 
-addTabsQuicklyButton.setOnAction(event -> {
+    addTabsQuicklyButton.setOnAction(event -> {
 
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
             
