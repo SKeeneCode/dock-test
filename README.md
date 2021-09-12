@@ -6,32 +6,22 @@ Run the example, the user can click the buttons in each tab freely without error
 
 However when you press the buttons on the left, which try to add many tabs insequence:
 
-`
-
     addTabsQuicklyButton.setOnAction(event -> {
-
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
-            
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
-            
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
-            
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
-            
         });
-        
-`
-        
+         
 and
 
-`
-addTabsQuicklyButton2.setOnAction(event -> {
+    addTabsQuicklyButton2.setOnAction(event -> {
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
             tabPane.placeTab(createTab(), Pos.TOP_CENTER);
             tabPane.placeTab(createTab(), Pos.CENTER_RIGHT);
         });
-`
+
 
 the later causes an error which is what I want to fix.
 
